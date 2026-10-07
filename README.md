@@ -33,6 +33,10 @@ npm run dev
 
 Open the local URL printed by Vite, usually `http://localhost:5173`.
 
+## Publish on GitHub Pages
+
+For the first deployment, open the repository's **Settings > Pages** and set **Build and deployment > Source** to **GitHub Actions**. After that, pushes to `main` deploy the site automatically. You can also run the **Deploy to GitHub Pages** workflow manually from the Actions tab.
+
 Create a production build with:
 
 ```bash
