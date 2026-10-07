@@ -4,6 +4,10 @@ A React mini project that helps students explore sample internship opportunities
 
 > **Note:** The job listings in this project are illustrative sample records. They are not verified live vacancies.
 
+## Live website
+
+https://mohammedyasir93.github.io/student-intenship/
+
 ## Features
 
 - Browse 10 sample internships across Electronics, Embedded Systems, IoT, Web Development, and Software.
