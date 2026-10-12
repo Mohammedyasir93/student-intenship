@@ -3,6 +3,7 @@ const links = [
   { label: 'Jobs', page: 'jobs', href: '#/jobs' },
   { label: 'Add Application', page: 'add-application', href: '#/add-application' },
   { label: 'Applications', page: 'applications', href: '#/applications' },
+  { label: 'Student Login', page: 'login', href: '#/login' },
 ];
 
 export default function Navbar({ activePage }) {

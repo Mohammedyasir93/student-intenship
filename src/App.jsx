@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx';
 import Jobs from './pages/Jobs.jsx';
 import AddApplication from './pages/AddApplication.jsx';
 import Applications from './pages/Applications.jsx';
+import StudentLoginPage from './pages/StudentLoginPage.jsx';
 
 const STORAGE_KEY = 'student-job-tracker-applications';
 
@@ -21,7 +22,7 @@ function readApplications() {
 
 function getPage() {
   const page = window.location.hash.replace(/^#\/?/, '').split('/')[0];
-  return ['jobs', 'add-application', 'applications'].includes(page) ? page : 'home';
+  return ['jobs', 'add-application', 'applications', 'login'].includes(page) ? page : 'home';
 }
 
 export default function App() {
@@ -67,6 +68,8 @@ export default function App() {
     content = <AddApplication initialJob={selectedJob} onSave={saveApplication} />;
   } else if (page === 'applications') {
     content = <Applications applications={applications} onDelete={deleteApplication} />;
+  } else if (page === 'login') {
+    content = <StudentLoginPage />;
   } else {
     content = <Home jobCount={10} applicationCount={applications.length} />;
   }
